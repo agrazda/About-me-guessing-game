@@ -1,0 +1,16 @@
+body *{
+  box-sizing: border-box;
+  padding: 10px;
+ 
+}
+
+.page {
+  border: 1px solid #654;
+  background-color: darkturquoise;
+  Padding: inherit
+}
+
+h1 {
+  font-size: x-large; color:blue; background-color: darkgray;
+ 
+}

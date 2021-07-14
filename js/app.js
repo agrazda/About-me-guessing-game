@@ -1,5 +1,7 @@
 'use strict';
 
+//Used instructor demo for prompt code - (seattle-code-201d77/class-02/demo/js/app.js)
+
 let userName = prompt('Please enter your name');
 document.write("Hello, " + userName + ". Welcome!");
 
