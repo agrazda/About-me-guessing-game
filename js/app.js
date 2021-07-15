@@ -45,11 +45,11 @@ let cat = catOrig.toLowerCase();
 //console.log(cat);
 
 if (cat === 'yes' || cat === 'y') {
-  alert('I sure do. 3 cats! #\catdad');
+  alert('I sure do. Cats! #\catdad');
 } else if (cat === 'no' || cat === 'n') {
-  alert('Oh so close! I have 3 cats! #\lintrollerseverywhere');
+  alert('Oh so close! I have cats! #\lintrollerseverywhere');
 } else {
-  alert('I didn\'t get that, but I 3 cats!');
+  alert('I didn\'t get that, but I have cats!');
 }
 
 let kidOrig = prompt('Do I have any kids?');
@@ -95,4 +95,36 @@ if (now === 'yes' || now === 'y') {
   alert('Thats too bad! Maybe next time.');
 } else {
   alert('I didn\'t get that, but there is no way you didnt learn something about me!');
+}
+
+
+// list of my favorite movies
+// give 5 chances - let them know
+
+//Aray of Foods
+const foodArray = ['pizza', 'steak', 'cereal', 'pad thai', 'sushi' ]
+
+// establish a count for my guesses
+let guesses =5 //never geo below 1
+
+let correctFood = false;
+//wrap in a while loop - condition
+while(!correctFood && guesses > 0){
+  //prompt user for guess
+    let userGuess = prompt('Can you guess one of my favorite foods? Be careful, you only have'  + guesses +  'chances.')
+    let userGuessLower = userGuess.toLowerCase()
+          // check if the userGuess matches each single movie
+    if (foodArray.includes(userGuessLower)){
+      alert('you got one! Amazing!');
+      correctFood = true
+      if (correctFood) {
+        alert('Great job, here is a list of the other choices'+ movieArray);
+      }
+      break;
+    }
+
+      if(!correctFood && guesses === 1){
+      alert('sorry you are incorrect, Possible options were ' + foodArray);
+  }
+  guesses--;
 }
